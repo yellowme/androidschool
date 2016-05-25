@@ -1,7 +1,4 @@
 <resources>
     <string name="app_name">Android School</string>
 
-    <string name="hint_text_info">Ingrese un valor</string>
-    <string name="btn_action">Asignar valor</string>
-
 </resources>
