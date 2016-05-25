@@ -24,7 +24,13 @@
         android:hint="@string/hint_text_info"
          />
 
-    
+    <Button
+        android:id="@+id/buttonAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextUsuario"
+        android:text="@string/btn_action"
+        />
 
 
 

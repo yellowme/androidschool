@@ -4,7 +4,7 @@ package mx.yellowme.androidschool;
  * Created by javikin on 5/13/16.
  */
 
-import android.text.InputType;
+import android.widget.Button;
 import android.widget.EditText;
 
 import org.junit.Before;
@@ -20,7 +20,7 @@ import static junit.framework.Assert.assertNotNull;
 
 @Config(constants = BuildConfig.class, sdk = 18)
 @RunWith(RobolectricGradleTestRunner.class)
-public class Ejercicio4Test {
+public class Ejercicio5Test {
     private MainActivity activity;
 
     @Before
@@ -32,11 +32,12 @@ public class Ejercicio4Test {
     @Test
     public void validateContent() {
 
-        String hint = activity.getResources().getString(R.string.hint_text_info);
-        EditText editText = (EditText) activity.findViewById(R.id.editTextUsuario);
+        String hint = activity.getResources().getString(R.string.btn_action);
+        Button button = (Button) activity.findViewById(R.id.buttonAction);
 
-        assertNotNull("El hint 'hint_text_info' no fue encontrado", hint);
-        assertEquals("El valor de 'hint_text_info' no coincide con el hint del input", hint , editText.getHint());
+        assertNotNull("btn_action no Encontrado", button);
+        assertNotNull("El text 'btn_action' no fue encontrado", hint);
+        assertEquals("El button no contiene el texto del resource 'btn_action'", hint , button.getText());
 
     }
 }
