@@ -30,6 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/editTextUsuario"
         android:text="@string/btn_action"
+        android:onClick="setValue"
         />
 
 
