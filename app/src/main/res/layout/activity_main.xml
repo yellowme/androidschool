@@ -9,9 +9,5 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="mx.yellowme.androidschool.MainActivity">
 
-    <TextView
-        android:id="@+id/textViewUsuario"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+
 </RelativeLayout>
