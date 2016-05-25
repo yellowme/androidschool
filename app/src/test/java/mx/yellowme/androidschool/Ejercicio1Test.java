@@ -13,7 +13,9 @@ import org.robolectric.Robolectric;
 import org.robolectric.RobolectricGradleTestRunner;
 import org.robolectric.annotation.Config;
 
+import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertNotNull;
+import static junit.framework.Assert.assertNotSame;
 
 
 @Config(constants = BuildConfig.class, sdk = 18)
@@ -31,6 +33,7 @@ public class Ejercicio1Test {
     public void validateTextViewContent() {
         TextView textView = (TextView) activity.findViewById(R.id.textViewUsuario);
         assertNotNull("textViewUsuario no Encontrado", textView);
+        assertEquals("textViewUsuario no tiene el texto 'Yellow World!' ", "Yellow World!", textView.getText());
 
     }
 }
