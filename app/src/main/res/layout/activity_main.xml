@@ -21,6 +21,11 @@
         android:layout_height="wrap_content"
         android:paddingTop="50dp"
         android:inputType="number"
+        android:hint="@string/hint_text_info"
          />
+
+    
+
+
 
 </RelativeLayout>
