@@ -4,7 +4,6 @@ package mx.yellowme.androidschool;
  * Created by javikin on 5/13/16.
  */
 
-import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -22,7 +21,7 @@ import static junit.framework.Assert.assertNotSame;
 
 @Config(constants = BuildConfig.class, sdk = 18)
 @RunWith(RobolectricGradleTestRunner.class)
-public class Ejercicio2Test {
+public class Ejercicio1Test {
     private MainActivity activity;
 
     @Before
@@ -32,9 +31,9 @@ public class Ejercicio2Test {
 
 
     @Test
-    public void validateContent() {
-        EditText editText = (EditText) activity.findViewById(R.id.editTextUsuario);
-        assertNotNull("editTextUsuario no Encontrado", editText);
-        assertNotSame("No tiene el paddingtop correcto", editText.getPaddingTop(), "50");
+    public void validateTextViewContent() {
+        TextView textView = (TextView) activity.findViewById(R.id.textViewUsuario);
+        assertNotNull("textViewUsuario no Encontrado", textView);
+        assertEquals("textViewUsuario no tiene el texto 'Yellow World!' ", "Yellow World!", textView.getText());
     }
 }
