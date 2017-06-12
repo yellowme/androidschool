@@ -21,7 +21,7 @@ import static junit.framework.Assert.assertNotSame;
 
 @Config(constants = BuildConfig.class, sdk = 18)
 @RunWith(RobolectricGradleTestRunner.class)
-public class Ejercicio1Test {
+public class YellowWorldTest {
     private MainActivity activity;
 
     @Before
@@ -32,8 +32,8 @@ public class Ejercicio1Test {
 
     @Test
     public void validateTextViewContent() {
-        TextView textView = (TextView) activity.findViewById(R.id.textViewUsuario);
-        assertNotNull("textViewUsuario no Encontrado", textView);
-        assertEquals("textViewUsuario no tiene el texto 'Yellow World!' ", "Yellow World!", textView.getText());
+        TextView textView = (TextView) activity.findViewById(R.id.textViewUser);
+        assertNotNull("textViewUser not found", textView);
+        assertEquals("textViewUser doesn't have the text 'Yellow World!' ", "Yellow World!", textView.getText());
     }
 }
