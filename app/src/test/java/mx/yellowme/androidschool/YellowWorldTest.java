@@ -4,7 +4,6 @@ package mx.yellowme.androidschool;
  * Created by javikin on 5/13/16.
  */
 
-import android.widget.EditText;
 import android.widget.TextView;
 
 import org.junit.Before;
@@ -16,7 +15,6 @@ import org.robolectric.annotation.Config;
 
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertNotNull;
-import static junit.framework.Assert.assertNotSame;
 
 
 @Config(constants = BuildConfig.class, sdk = 18)
