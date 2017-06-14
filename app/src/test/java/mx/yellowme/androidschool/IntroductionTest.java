@@ -29,6 +29,6 @@ public class IntroductionTest {
 
     @Test
     public void validateActivity() {
-        assertNotNull("MainActivity not found", activity);
+        assertNotNull("MainActivity null", activity);
     }
 }
