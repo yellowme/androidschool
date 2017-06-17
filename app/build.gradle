@@ -17,10 +17,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    useLibrary 'org.apache.http.legacy'
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
     testCompile "org.assertj:assertj-core:1.7.0"
     testCompile 'org.robolectric:robolectric:3.0'
